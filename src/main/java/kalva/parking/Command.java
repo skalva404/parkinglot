@@ -2,7 +2,7 @@ package kalva.parking;
 
 public interface Command<T> {
 
-  T runCommand();
+  T runCommand(String... args);
 
-  void setParkingLot(ParkingLot parkingLot);
+  void setParkingLotStore(ParkingLotStore parkingLotStore);
 }

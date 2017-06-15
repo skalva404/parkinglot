@@ -1,17 +1,17 @@
 package kalva.parking.commands;
 
 import kalva.parking.Command;
-import kalva.parking.ParkingLot;
+import kalva.parking.ParkingLotStore;
 
-public class CreateCommand implements Command<ParkingLot> {
+public class CreateCommand implements Command<ParkingLotStore> {
 
-  private ParkingLot parkingLot;
+  private ParkingLotStore parkingLotStore;
 
-  public ParkingLot runCommand() {
+  public ParkingLotStore runCommand(String... args) {
     return null;
   }
 
-  public void setParkingLot(ParkingLot parkingLot) {
-    this.parkingLot = parkingLot;
+  public void setParkingLotStore(ParkingLotStore parkingLotStore) {
+    this.parkingLotStore = parkingLotStore;
   }
 }

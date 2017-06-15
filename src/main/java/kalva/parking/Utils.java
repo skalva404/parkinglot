@@ -1,4 +1,6 @@
 package kalva.parking;
 
-public class ParkingLot {
+public class Utils {
+
+
 }
