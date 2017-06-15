@@ -10,7 +10,9 @@
 
   <properties>
     <slf4j>1.7.25</slf4j>
-    <lombok>1.16.4</lombok>
+    <guava>22.0</guava>
+    <testng>6.11</testng>
+    <lombok>1.16.16</lombok>
     <jdk.version>1.8</jdk.version>
   </properties>
 
@@ -29,6 +31,17 @@
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>${lombok}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>${guava}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>${testng}</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 
