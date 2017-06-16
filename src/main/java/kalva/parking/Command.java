@@ -2,11 +2,11 @@ package kalva.parking;
 
 import com.googlecode.cqengine.IndexedCollection;
 
-import kalva.parking.entities.ParkingSlot;
+import kalva.parking.model.ParkingSlot;
 
-public interface Command<T> {
+public interface Command<I, O> {
 
-  T runCommand(String... args);
+  O runCommand(I i) throws ParkingError;
 
   void setParkingSlots(final IndexedCollection<ParkingSlot> parkingSlots);
 }

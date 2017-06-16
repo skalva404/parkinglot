@@ -1,4 +1,4 @@
-package kalva.parking.entities;
+package kalva.parking.model;
 
 import com.googlecode.cqengine.attribute.SimpleAttribute;
 import com.googlecode.cqengine.query.option.QueryOptions;

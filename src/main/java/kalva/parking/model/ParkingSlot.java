@@ -1,4 +1,6 @@
-package kalva.parking.entities;
+package kalva.parking.model;
+
+import static kalva.parking.model.ParkingSlot.SlotStatus.*;
 
 import com.googlecode.cqengine.attribute.SimpleAttribute;
 import com.googlecode.cqengine.query.option.QueryOptions;
@@ -18,6 +20,7 @@ public class ParkingSlot {
 
   private Long id;
   private Car car;
+  private SlotStatus status = FREE;
 
   private ParkingSlot() {
   }
@@ -28,9 +31,15 @@ public class ParkingSlot {
 
   public void setCar(Car car) {
     this.car = car;
+    this.status = SlotStatus.OCCUPIED;
   }
 
   public void unSetCar() {
     this.car = null;
+    this.status = SlotStatus.FREE;
+  }
+
+  public static enum SlotStatus {
+    OCCUPIED, FREE
   }
 }
