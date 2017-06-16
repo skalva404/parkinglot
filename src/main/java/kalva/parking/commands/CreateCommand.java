@@ -1,17 +1,24 @@
 package kalva.parking.commands;
 
+import com.google.common.base.Preconditions;
+import com.googlecode.cqengine.IndexedCollection;
+
 import kalva.parking.Command;
-import kalva.parking.ParkingLotStore;
+import kalva.parking.entities.ParkingLot;
+import kalva.parking.entities.ParkingSlot;
 
-public class CreateCommand implements Command<ParkingLotStore> {
+public class CreateCommand implements Command<ParkingLot> {
 
-  private ParkingLotStore parkingLotStore;
 
-  public ParkingLotStore runCommand(String... args) {
-    return null;
+  @Override
+  public ParkingLot runCommand(String... args) {
+    Preconditions.checkArgument(args != null && null != args[0],
+        "ParkingLot size can not be empty ...");
+    return new ParkingLot(Long.parseLong(args[0]));
   }
 
-  public void setParkingLotStore(ParkingLotStore parkingLotStore) {
-    this.parkingLotStore = parkingLotStore;
+  @Override
+  public void setParkingSlots(final IndexedCollection<ParkingSlot> parkingSlots) {
+
   }
 }
