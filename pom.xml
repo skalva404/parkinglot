@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
@@ -9,40 +9,11 @@
   <version>1.0-SNAPSHOT</version>
 
   <properties>
-    <slf4j>1.7.25</slf4j>
-    <guava>22.0</guava>
     <testng>6.11</testng>
-    <cqengine>2.10.0</cqengine>
-    <lombok>1.16.16</lombok>
     <jdk.version>1.8</jdk.version>
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>${slf4j}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-simple</artifactId>
-      <version>${slf4j}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>${lombok}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
-      <version>${guava}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.googlecode.cqengine</groupId>
-      <artifactId>cqengine</artifactId>
-      <version>${cqengine}</version>
-    </dependency>
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
@@ -77,7 +48,7 @@
           <!-- MainClass in mainfest make a executable jar -->
           <archive>
             <manifest>
-              <mainClass>kalva.parking.ParkingApp</mainClass>
+              <mainClass>gj.interview.parking.service.ParkingApp</mainClass>
             </manifest>
           </archive>
         </configuration>
