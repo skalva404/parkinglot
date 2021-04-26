@@ -31,32 +31,24 @@ _We interact with the system via a simple set of commands which produce a specif
 2) It should accept a filename as a parameter at the command prompt and read the commands from that file
 
 ### Example: File ###						
-To run the program:						
-$ ./parking_lot file_inputs.txt
+    To run the program:						
+    $ ./parking_lot file_inputs.txt
 						
 ### Input (contents of file): ###						
-create_parking_lot 6	
+    create_parking_lot 6	
 						
-park KA-01-HH-1234 White
-						
-park KA-01-HH-9999 White
-						
-park KA-01-BB-0001 Black
-						
-park KA-01-HH-7777 Red
-						
-park KA-01-HH-2701 Blue
-						
-park KA-01-HH-3141 Black					
-leave 4						
-status						
-park KA-01-P-333 White
-						
-park DL-12-AA-9999 White
-						
-registration_numbers_for_cars_with_colour White
-						
-slot_numbers_for_cars_with_colour White
-						
-slot_number_for_registration_number KA-01-HH-3141
-slot_number_for_registration_number MH-04-AY-1111
+    park KA-01-HH-1234 White
+    park KA-01-HH-9999 White
+    park KA-01-BB-0001 Black
+    park KA-01-HH-7777 Red
+    park KA-01-HH-2701 Blue
+    park KA-01-HH-3141 Black					
+    
+    leave 4						
+    status						
+    park KA-01-P-333 White
+    park DL-12-AA-9999 White
+    registration_numbers_for_cars_with_colour White
+    slot_numbers_for_cars_with_colour White
+    slot_number_for_registration_number KA-01-HH-3141
+    slot_number_for_registration_number MH-04-AY-1111
