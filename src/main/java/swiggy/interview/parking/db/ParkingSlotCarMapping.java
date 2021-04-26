@@ -91,7 +91,7 @@ public class ParkingSlotCarMapping implements Table {
         if (0 == table.get(SlotStatus.FREE).size()) {
             return null;
         }
-        table.get(SlotStatus.FREE).sort((thisObj, thatObj) -> thisObj.id().compareTo(thatObj.id()));
+        table.get(SlotStatus.FREE).sort(Comparator.comparing(ParkingSlot::id));
         return table.get(SlotStatus.FREE).get(0);
     }
 
