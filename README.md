@@ -76,7 +76,7 @@ _We interact with the system via a simple set of commands which produce a specif
     Not found
 
 
-#### Example: Interactive
+### Example: Interactive ###
     To run the program and launch the shell:
     $ ./parking_lot
     Assuming a parking lot with 6 slots, the following commands should be run in sequence by typing them in at a prompt and should produce output as described below the command:
